@@ -147,5 +147,15 @@ public class ChandrayanTest
         Assert.assertEquals(Expected_Y, y);
         Assert.assertEquals(Expected_Z, z);
     }
+    @Test
+    public void shouldAnswerWithTrue2() throws Exception
+    {
+    	char[] command = {'r','d','r'};
+    	String True_Direction="N";
+    	 Chandrayanmain rocket = new Chandrayanmain(0,0,0, "S", command);
+         rocket.Test();
+        String Direction = rocket.getDirection();
+        Assert.assertEquals(True_Direction, Direction);
+    }
 }
 

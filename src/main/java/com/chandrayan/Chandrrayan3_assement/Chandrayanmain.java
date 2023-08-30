@@ -8,7 +8,7 @@ class Chandrayanmain {
 	private String direction;
 	private String previousDir;
 	private String previousDirComplement;
-	boolean verticalAxis = false;
+	private boolean verticalAxis = false;
 
 	Chandrayanmain(int x, int y, int z, String dir, char[] move) throws Exception {
 		if (x < -100 || x > 100 || y < -100 || y > 100 || z < -100 || z > 100)
